@@ -1,0 +1,102 @@
+Config:
+  Nome: "Fight"
+  Evento_Type: "fight"
+  Chamadas: 5
+  Tempo_Entre_As_Chamadas: 10
+  Minimo_Partipantes: 2
+  Tempo_Entre_Avisos: 120
+  Tempo_Luta: 180
+  Tempo_Entre_Lutas: 10
+  PVP: true
+  Assistir_Ativado: true
+  Contar_Vitoria: true
+  Contar_Participacao: true
+  Inv_Vazio: true
+
+Itens_Lutas:
+  Lutas_Normais:
+    Armadura:
+      Helmet: null
+      Armor: null
+      Legs: null
+      Boots: null
+    Inventario:
+      - 268 1
+  Ultima_Luta:
+    Armadura:
+      Helmet: 306 1
+      Armor: 307 1
+      Legs: 308 1
+      Boots: 309 1
+    Inventario:
+      - 267 1
+
+Premios:
+  Itens:
+    - 263 1
+    - 384 15
+  Comandos:
+    - "say $player$ toper"
+  Money: 100000.0
+
+Localizacoes:
+  Saida: world;730.4401266828007;23.0;799.5038991461042;179.54951;25.199923
+  Camarote: eventos;-350.7223553636283;15.0;-420.2395514142502;90.74893;44.549995
+  Entrada: eventos;-351.47376067293845;5.0;-436.7135774633887;359.9988;32.700005
+  Aguardando: eventos;-386.585871124227;4.0;-478.5405469073799;358.9489;19.80002
+  Pos_1: eventos;-351.47965239301203;5.0;-428.3542174948191;0.298727;33.14999
+  Pos_2: eventos;-351.43666270780295;5.0;-412.5683803356911;-179.5512;28.04998
+
+Mensagens:
+  Aberto:
+    - "  "
+    - "&9[$EventoName$] &fO evento &6$EventoName$ &festa aberto!"
+    - "&9[$EventoName$] &fPara participar digite &6/evento"
+    - "&9[$EventoName$] &fEsse evento e pvp &c[ON]"
+    - "&9[$EventoName$] &fRisco de morte &c[ON]"
+    - "  "
+  Iniciando:
+    - "  "
+    - "&9[$EventoName$] &fEvento fechado, iniciando!"
+    - "&9[$EventoName$] &fBoa sorte aos participantes!"
+    - "  "
+  Vencedor:
+    - "  "
+    - "&9[$EventoName$] &fO evento &6$EventoName$ &ffoi finalizado!"
+    - "&9[$EventoName$] &fO vencedor do evento foi: &6$player$"
+    - "  "
+  Sem_Vencedor:
+    - "  "
+    - "&9[$EventoName$] &fO evento &6$EventoName$ &ffoi finalizado!"
+    - "&9[$EventoName$] &fNao houve um vencedor!"
+    - "  "
+  Minimo_Players:
+    - "  "
+    - "&9[$EventoName$] &cEvento finalizado."
+    - "&9[$EventoName$] &cNumero de participantes menor do que $minimo$"
+    - "  "
+  Cancelado:
+    - "  "
+    - "&4[$EventoName$] &cEvento &6$EventoName$ &cfoi cancelado!"
+    - "  "
+  Status:
+    - " "
+    - "&9[$EventoName$] &fEvento ocorrendo no momento!"
+    - "&9[$EventoName$] &fPara assistir utilize &6/evento assistir"
+    - " "
+  Iniciando_Em:
+    - " "
+    - "&9[$EventoName$] &fProxima luta em &6$tempo$ &fsegundos"
+    - " "
+  Iniciar_Luta:
+    - " "
+    - "&9[$EventoName$] &fDuelo entre &b$lutador1$ &fe &b$lutador2$ &finiciou"
+    - " "
+  Luta_Sem_Vencedor:
+    - " "
+    - "&9[$EventoName$] &fO duelo não houve vencedores"
+    - " "
+  Luta_Vencedor:
+    - " "
+    - "&9[$EventoName$] &b$vencedor$ &fvenceu a luta"
+    - " "

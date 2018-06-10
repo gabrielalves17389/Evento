@@ -1,0 +1,9 @@
+main: me.gabriel.eventos.Main
+name: Eventos
+version: 2.0
+author: Gabriel
+description: Plugin de eventos automaticos
+
+commands:
+    evento:
+        description: Todos os comandos do plugin

@@ -1,0 +1,81 @@
+#           CONFIGURAÇÃO
+# Dia-Hora:Minuto-NomeArquivo;vip
+# Dia é opcional, se não tiver dia, ele vai acontecer todos dias
+# Hora:Minuto e NomeArquivo são obrigatórios
+# No NomeArquivo não é necessario .yml no fim
+# Evite marcar eventos para realizarem na mesma hora e minuto para evitar problemas
+# Para evento vip você coloca ";vip" no fim da linha
+# Caso você queira criar um evento corrida qualquer outro que use placa no fim, crie uma cópia do eventoexemplo.yml
+# Nunca altere na configuração do evento a opção "Config.Evento_Type"
+#
+Horarios:
+  - "09:00-batataquente"
+  - "10:00-bowspleef"
+  - "11:00-eventoexemplo"
+  - "12:00-parkour"
+  - "12:30-frog;vip"
+  - "13:00-paintball"
+  - "15:00-spleef"
+  - "sabado-15:10-killer"
+
+Money_Multiplicador: 1
+
+Ativar_Configs_Exemplos: true
+Bloquear_Teleporte: true
+
+MySQL:
+  Ativado: false
+  Usuario: "user"
+  Senha: "pass"
+  Database: "database"
+  Host: "localhost"
+
+Comandos_Liberados:
+  - "/g"
+  - "/l"
+  - "/tell"
+  - "/clan"
+  - "/evento"
+
+Mensagens:
+  Morreu: "&9[Evento] &fO jogador &6$player$ &fmorreu no evento!"
+  Desconectou: "&9[Evento] &fO jogador &6$player$ &fdesconectou no evento!"
+  Saiu: "&9[Evento] &fO jogador &6$player$ &fsaiu do evento!"
+  Comando_Bloqueado: "&9[Evento] &fEsse comando e bloqueado no evento!"
+  Teleporte_Bloqueado: "&9[Evento] &fTeleporte durante o evento esta bloqueado!"
+  Nenhum_Evento: "&9[Evento] &fNao ha nenhum evento ocorrendo no momento!"
+  Evento_Fechado: "&9[Evento] &fO evento esta fechado, para ver digite /evento assistir"
+  Ja_Participa: "&9[Evento] &fVoce ja esta participando desse evento!"
+  Entrou: "&9[Evento] &fO jogador &6$player$ &fentrou no evento!"
+  Nao_Participa: "&9[Evento] &fVoce nao esta participando desse evento!"
+  Ja_Esta_Camarote: "&9[Evento] &fVoce ja esta no camarote!"
+  Inventario_Vazio: "&9[Evento] &fVoce precisa estar com o invetario vazio!"
+  Assistir_Desativado: "&9[Evento] &fNao e possivel assistir a esse evento!"
+  Assistir_SemPermission: "&9[Evento] &fVocê não tem permissão para assistir eventos!"
+  Assistindo: "&9[Evento] &fO jogador &6$player$ &festa assistindo ao evento!"
+  Evento_VIP: "&9[Evento] &fEsse evento esta habilitado apenas para players VIP's!"
+  Top_Vencedores: "&9[Eventos] TOP Vencedores"
+  Top_Vencedores_Posicao: "&9[&f$posicao$&9] - &f$player$ &9- &f$vitorias$ &9vitorias"
+  Top_Participacoes: "&9[Eventos] TOP Participantes"
+  Top_Participacoes_Posicao: "&9[&f$posicao$&9] - &f$player$ &9- &f$participacoes$ &9participacoes"
+  Default:
+    - "&9[Eventos] Todos comandos e outros"
+    - "&9/evento &f- Entra em um evento"
+    - "&9/evento assistir &f- Assisti ao evento"
+    - "&9/evento sair &f- Sai do evento"
+    - "&9/evento top vencedores &f- Os que mais venceram"
+    - "&9/evento top participacoes &f- Os que mais participaram"
+  DefaultAdmin:
+    - "&4/evento iniciar <nome> <true/false> &c- Inicia um evento"
+    - "&4/evento cancelar &c- Cancela um evento"
+    - "&4/evento setloc entrada <evento> &c- Seta a entrada"
+    - "&4/evento setloc saida <evento> &c- Seta a saida"
+    - "&4/evento setloc camarote <evento> &c- Seta o camarote"
+    - "&4/evento setloc aguardando <evento> &c- Seta local de espera"
+    - "&4/evento setloc [pos1/pos2] <evento> &c- (fight/paintball)"
+    - "&4/evento multiplicador &c- Altera o multiplicador de money"
+    - "&4/evento multiplicador reset &c- Reseta o multiplicador"
+    - "&4/evento reload &c- Recarrega a config do plugin"
+    - "&4/evento tool <evento> &c- Ferramenta para setar loc de blocos"
+    - "&4/evento lista &c- Mostra a lista de eventos"
+    - "&4/evento report &c- Mostra o link para reportar erros"
